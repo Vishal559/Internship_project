@@ -20,6 +20,10 @@ app.use(
     })
 );
 
+app.get('/',function(req,res){
+  res.send("welcome");
+})
+
 //import All routes
 const product = require("./routes/product");
 
