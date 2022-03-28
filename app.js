@@ -28,6 +28,6 @@ app.use("/api/v1", product);
 
 const port = process.env.PORT || 8080;
 
-app.listen(process.env.PORT, ()=>{
+app.listen(port, ()=>{
     console.log(`server is running on PORT ${port}`);
 })
