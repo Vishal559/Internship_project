@@ -26,6 +26,8 @@ const product = require("./routes/product");
 //router middleware
 app.use("/api/v1", product);
 
+const port = Process.env.PORT || 8080;
+
 app.listen(process.env.PORT, ()=>{
     console.log(`server is running on PORT :${ process.env.PORT}`);
 })
