@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const connectWithDb = () => {
   mongoose
-    .connect(process.env.MONGO_URL, {
+    .connect('mongodb+srv://admin-vishal:Vishal123490@cluster0.cujjf.mongodb.net/ZOMATO_DB?retryWrites=true&w=majority', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
