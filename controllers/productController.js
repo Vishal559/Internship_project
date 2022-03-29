@@ -1,7 +1,7 @@
 const Product = require("../models/product");
 const BigPromise = require("../middlewares/bigPromise");
 const cloudinary = require("cloudinary");
-const CustomError = require("../utils/customError");
+const CustomError = require("../utils/CustomError");
 const WhereClause = require("../utils/WhereClause");
 
 
